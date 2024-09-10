@@ -2,49 +2,90 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>我的个人网站</title>
-    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精美的HTML页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <div class="home">
-        <div class="content">
-            <div class="stars"></div>
-            <img class="bgc" src="https://img.lccyj.ltd/img/tongnian.JPG" width="100%" alt="">
-            <h3 class="title">欢迎来到我的个人网站</h3>
-            <h3 class="titles">我时常回到童年，用一片童心思考问题，很多烦恼的问题就变得易解。</h3>
-            <img class="icon" src="https://img.lccyj.ltd/img/down.png" alt="">
-            <div class='ribbon'>
-                <span>Home</span>
-                <span>About</span>
-                <span>Hobbies</span>
-            </div>
-        </div>
-        <div class="icons">
-            <div class="icons_items">
-                <img class="icons_items_imgs" src="https://img.lccyj.ltd/img/tongxin (2).png" alt="">
-                <span>守住童心</span>
-            </div>
-            <div class="icons_items">
-                <img class="icons_items_imgs" src="https://img.lccyj.ltd/img/huli (2).png" alt="">
-                <span>那些小王子教会我的</span>
-            </div>
-            <div class="icons_items">
-                <img class="icons_items_imgs" src="https://img.lccyj.ltd/img/xiaowangzi (2).png" alt="">
-                <span>狐狸---温暖了一生</span>
-            </div>
-            <div class="icons_items">
-                <img class="icons_items_imgs" src="https://img.lccyj.ltd/img/meigui (2).png" alt="">
-                <span>玫瑰---惊艳了时光</span>
-            </div>
-        </div>
-        <div class="introduce">
-            <div class="introduce_item">
-                <img class="introduce_item_img" src="https://img.lccyj.ltd/img/tongxin (2).png" alt="">
-                <span class="introduce_item_title">
-                    我们整天忙忙碌碌，像一群群没有灵魂的苍蝇，喧闹着，躁动着，听不到灵魂深处的声音。时光流逝，童年远去，我们渐渐长大，岁月带走了许许多多的回忆，也消蚀了心底曾今拥有的那份童稚的纯真，我们不顾心灵桎梏，沉溺于人世浮华，专注于利益法则，我们把自己弄丢了。<br><br>
-                    所有的大人都曾经是小孩，虽然，只有少数的人记得。<br><br>
-                    只有用心灵才能看得清事物本质，真正重要的东西是肉眼无法看见的
-                </span>
-            </div>
-            <div class="introduce_item">
-                <span class="introduce_item_titles">小王子在离开了玫瑰后才明白爱的道理：“我那时什么也不懂！我应该根据她的行为，而不是她的话来判断她。她使我的生活芬芳多彩，我真不该离开她跑出来。我本应该猜出在她那笨拙的假话背后所隐藏的情爱。玫瑰花是多么的自相
+
+<header>
+    <h1>欢迎来到我的网页</h1>
+    <nav>
+        <a href="#about">关于</a>
+        <a href="#services">服务</a>
+        <a href="#contact">联系</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>关于我们</h2>
+        <p>我们是一家致力于提供优质服务的公司。我们的团队由经验丰富的专业人士组成，旨在满足客户的需求。</p>
+    </section>
+
+    <section id="services">
+        <h2>我们的服务</h2>
+        <ul>
+            <li>服务一</li>
+            <li>服务二</li>
+            <li>服务三</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>联系我们</h2>
+        <p>如果您有任何问题，请通过以下方式联系我们：</p>
+        <p>Email: example@example.com</p>
+        <p>电话: 123-456-7890</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 我的公司. 保留所有权利.</p>
+</footer>
+
+</body>
+</html>
